@@ -1,0 +1,38 @@
+### 测试
+GET {{hostname}}/api/user/test
+Content-Type: application/json
+
+
+### Hello
+GET {{hostname}}/api/user/hello
+Content-Type: application/json
+
+
+### Hello
+POST {{hostname}}/api/user/hello
+Content-Type: application/json
+
+{
+  "name": "账务",
+  "age": 100,
+  "addressHome": "北京"
+}
+
+### World
+GET {{hostname}}/api/user/world
+Content-Type: application/json
+
+### Login
+POST {{hostname}}/api/user/login
+Content-Type: application/json
+
+{
+  "username": "zhangsan",
+  "password": "ssna"
+}
+
+
+### user info
+GET {{hostname}}/api/user/info HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{token}}
